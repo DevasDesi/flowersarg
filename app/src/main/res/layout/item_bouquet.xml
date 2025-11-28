@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bouquet_item_background"
+    android:layout_margin="8dp"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/ivBouquet"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="🌸"
+        android:textSize="60sp"
+        android:gravity="center"
+        android:background="@color/light_pink" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Название букета"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Описание букета"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0₽"
+            android:textSize="16sp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/btnFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="❤"
+            android:textSize="16sp"
+            android:textColor="@color/purple_500"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

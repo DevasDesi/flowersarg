@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Логотип -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌺 Flowermind"
+        android:textSize="32sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход в аккаунт"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Поле email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Поле пароля -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Кнопка входа -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Ссылка на регистрацию -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Нет аккаунта? Зарегистрироваться"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold" />
+
+</LinearLayout>
